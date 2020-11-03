@@ -191,3 +191,30 @@
 }
 
 /* Esercizio 13 */
+.ex-13-button:hover .ex-13-top-white {
+  animation-name: rotatetopcomplete ;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+}
+
+@keyframes rotatetopcomplete {
+  25% {left: calc(100% - 40px); top: -10px;}
+  50% {left: calc(100% - 40px); top: 100%;}
+  75% {left: 0; top: 100%;}
+  90% {left: -10%; top: -10px;}
+  100% {left: 10%; top: -10px;}
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+  animation-name: rotatebottomcomplete ;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+}
+
+@keyframes rotatebottomcomplete {
+  25% {right: calc(100% - 40px); bottom: -10px;}
+  50% {right: calc(100% - 40px); bottom: 100%;}
+  75% {right: 0; bottom: 100%;}
+  90% {right: -20%; bottom: -10px;}
+  100% {right: 20%; bottom: -10px;}
+}
