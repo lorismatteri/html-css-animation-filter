@@ -90,16 +90,54 @@
   border-radius: 2rem;
 }
 
+/* Esercizio 9 */
 .ex-9-img {
-    margin: 50px 100px;
-    width: 400px;
+  margin: 50px 100px;
+  width: 400px;
+  transition: all 2s;
 }
+
+.ex-9-img:hover {
+  filter: sepia(0.8) brightness(0.9);
+  border-radius: 2rem;
+  transform: scale(1.5);
+}
+
+/* Esercizio 10 */
 .ex-10-icon {
-    font-size: 60px;
+  font-size: 60px;
+  animation-name: rotation;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
+
+@keyframes rotation {
+  25% {transform: rotate(-90deg);}
+  50% {transform: rotate(-180deg);}
+  75% {transform: rotate(-270deg);}
+  100% {transform: rotate(-360deg);}
+}
+
+/* Esercizio 11 */
 .ex-11-icon {
-    font-size: 60px;
+  font-size: 60px;
 }
+
+.ex-11-icon:hover {
+  animation-name: quasirotation;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes quasirotation {
+  30% {transform: rotate(90deg);}
+  60% {transform: rotate(180deg);}
+  90% {transform: rotate(270deg);}
+  100% {transform: rotate(0);}
+}
+
+/* Esercizio 12 */
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
